@@ -1,0 +1,14 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='DepositB'>
+    <view>
+      <image class='DepositI' src="../../img/Deposit.png"></image>
+    </view>
+  </view>
+  <view class='Depositcon'>
+    <view style='text-align:center;'>刚录入的{{phone}}快件已经存放成功</view>
+    <view style='text-align:center;'>并已经通知收件人</view>
+  </view>
+  <button class='but' bindtap='another'>再放一件</button>
+  <button class='but' bindtap='goback'>返回首页</button>
+</view>

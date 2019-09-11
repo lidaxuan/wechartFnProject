@@ -1,0 +1,95 @@
+<view class="container">
+    <form bindsubmit="addExpress" report-submit='true'>
+        <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+        <view class='expressB'>
+            <view class='expressB_o'>
+                <view class='expressB_o_sel'>
+                    +86
+                    <image src="../../img/select.png" style='width:19rpx;height:12rpx;margin-left:50rpx;'></image>
+                </view>
+                <view>
+                    <input class='expressB_o_tel' value="{{phone}}" bindinput="phoneChange" name="phone" placeholder="请填写收件人手机号码"></input>
+                </view>
+                <image class='er_img' src='../../img/er_03.png' bindtap='scanExpress'></image>
+                <image class='express_img' src='../../img/express.png' bindtap='searchAddress'></image>
+            </view>
+            <view class='expressB_o'>
+                <view class='expressB_o_N'>
+                    姓名
+                </view>
+                <view>
+                    <input class='expressB_o_tel' value="{{username}}" placeholder="请填写收件人姓名" bindinput='nameChange'></input>
+                </view>
+            </view>
+            <view class='expressB_o'>
+                <view class='expressB_o_N'>
+                    收件地址
+                </view>
+                <view>
+                    <view class='expressYe'>
+                        <picker bindchange="cityChange" value="{{index}}" range="{{cityArr}}">
+                            <view style='margin-left:20rpx;'>{{city}}</view>
+                        </picker>
+                        <image src="../../img/select.png" style='width:19rpx;height:12rpx;position: absolute;right:20rpx;top:30rpx;'></image>
+                    </view>
+                    <view class='expressYe'>
+                        <picker bindchange="areaChange" value="{{index}}" range="{{areaArr}}">
+                            <view style='margin-left:20rpx;'>{{area}}</view>
+                        </picker>
+                        <image src="../../img/select.png" style='width:19rpx;height:12rpx;position: absolute;right:20rpx;top:30rpx;'></image>
+                    </view>
+                    <!-- <view class='expressYe_t'>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" range-key="{{'receivingName'}}">
+            <view  style='margin-left:20rpx;'>{{quName}}</view>
+          </picker>
+          <image src="../../img/select.png" style='width:19rpx;height:12rpx;position: absolute;right:20rpx;top:30rpx;'></image>
+        </view> -->
+                </view>
+            </view>
+            <view class='expressB_o' bindtap="getadd">
+                <view class='expressB_o_N'>
+                    小区名称
+                </view>
+                <view style="margin-left:6rpx;">
+                    {{quName}}
+                    <image class='img' src="../../img/right.png"></image>
+                </view>
+            </view>
+            <view class='expressB_oo'>
+                <view class='expressB_o_N'>
+                    详细地址
+                </view>
+                <view>
+                    <textarea style='width:490rpx;height:125rpx;margin-top:14rpx;float:right;' placeholder='请填写详细地址' bindinput="addressChange" value="{{address}}"></textarea>
+                </view>
+            </view>
+            <view class='expressB_o' bindtap="storeList">
+                <view class='expressB_o_N'>
+                    存放店面
+                </view>
+                <view style="margin-left:6rpx;">
+                    {{storeName}}
+                    <image class='img' src="../../img/right.png"></image>
+                </view>
+            </view>
+            <view class='expressB_o'>
+                <view class='expressB_o_N'>
+                    存放编号
+                </view>
+                <view style='width:100%;'>
+                    <text style='float:right;color:#e51d25;'>{{storeNumber}}</text>
+                </view>
+            </view>
+            <view class='expressB_o_foot'>
+                <view class='expressB_o_N'>
+                    快递照片
+                </view>
+                <view style='width:100%;'>
+                    <image class='kuaImg' src="{{expressImg}}" bindtap="choose"></image>
+                </view>
+            </view>
+        </view>
+        <button class='f_btn' formType="submit">存放快递</button>
+    </form>
+    <!--<canvas canvas-id="attendCanvasId" style='width:900rpx; height:1200rpx;position:absolute;left:-900rpx;'></canvas>-->
+</view>

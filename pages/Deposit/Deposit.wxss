@@ -1,0 +1,22 @@
+page{
+  background-color: #fff;
+}
+.DepositB{
+  width: 100%;
+  height: 340rpx;
+  text-align: center;
+}
+.DepositI{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 70rpx;
+}
+.Depositcon{
+  margin-bottom: 60rpx;
+}
+.but{
+  width:90%;
+  background: #233b76;
+  color:white;
+  margin-bottom: 40rpx;
+}

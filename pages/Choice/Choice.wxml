@@ -1,0 +1,15 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+    <view style='width:750rpx;background-color:#fff;'>
+      <view class='ChoiceB'>
+      <view wx:for="{{allStore}}" data-index="{{index}}" bindtap="selectStore" class='ChoiceB_o' wx:key="">
+        <view class='ChoiceB_o_t' style='font-size:40rpx;'>{{item.storename}}</view>
+        <view class='ChoiceB_o_t' style='font-size:30rpx;color:#a9a9a9;'>{{item.storedetail}}</view>
+        <view>
+          <text class='text' style='color:#a9a9a9;'>{{item.distance}}m</text>
+          <image class='img' src="../../img/right.png"></image>
+        </view>
+      </view>
+    </view>
+    </view>
+</view>

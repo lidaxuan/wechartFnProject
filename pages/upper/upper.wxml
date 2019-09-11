@@ -1,0 +1,11 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='upper-one'>
+    密云本地快递上门服务
+  </view>
+  <view wx:for="{{expressageList}}" wx:key="" class='upper-two'>
+    <view class='upper-w'>{{item.courierName}}<text class='upper-text' bindtap ='phoneCall' data-phone ='{{item.courierPhone}}'>{{item.courierPhone}}</text>
+    <text class='zhe'>{{item.courierDiscount}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <form bindsubmit="formSubmit">
+  <view class='bindingB'>
+    <view class='bindingB_o'>
+      <view class='bindingB_o_sel'>
+        +86
+        <image src="../../img/select.png" style='width:19rpx;height:12rpx;margin-left:50rpx;'></image>
+      </view>
+      <view>
+        <input class='bindingB_o_tel' name="phone" placeholder="请输入您的手机号码" bindinput='getPhoneValue' value=""></input>
+      </view>
+    </view>
+    <view class='bindingB_o'>
+      <input class='bindingB_o_tel' focus="{{foc}}" name="code" placeholder="请输入您的验证码"></input>
+      <view class='btn'><button bindtap="getCode" disabled="{{disabled}}">{{codename}}</button></view>
+    </view>
+    <view class='bindingB_o'>
+      <input class='bindingB_o_tel' name="bindCode" placeholder="请输入您的店员绑定码"></input>
+    </view>
+  </view>
+  <button class='f_btn' formType="submit">立即绑定</button>
+  </form>
+  <view style='color:#c1c1c1;'>店员绑定码请联系管理员索要</view>
+</view>

@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <view class='userImg'>
+        <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+      </view>
+    </block>
+  </view>
+  <button class='but' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button></view>

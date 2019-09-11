@@ -1,0 +1,17 @@
+<view class="container">
+  <view class='newExB'>
+    <view class='newExB_o'>
+      请输入您的取件码
+    </view>
+    <view class='newExB_inp'>
+      <input class='inp' placeholder="   请输入您的6位取件码" bindinput='getpickC' vlaue="{{pickCode}}"></input>
+    </view>
+    <button disabled="{{!checked}}" bindtap='pickup' class='but'>立即取件</button>
+    <view class='newExB_che' bindtap='getRouter'>
+      <checkbox value='1' checked="{{checked}}" disabled='{{!checked}}' class='checkbox'></checkbox>点击代表您同意蓝盒子家快件代收使用协议
+    </view>
+    <view style='height:50rpx;'>
+    </view>
+  </view>
+</view>
+

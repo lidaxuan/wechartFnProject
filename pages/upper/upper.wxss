@@ -1,0 +1,29 @@
+.upper-one{
+  width: 690rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+.upper-two{
+  width: 690rpx;
+  padding: 0 30rpx;
+  background: white;
+  font-size: 34rpx;
+}
+.upper-w{
+  height: 85rpx;
+  line-height: 85rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: relative;
+}
+.upper-text{
+  float: right;
+}
+.zhe{
+  width: 140rpx;
+  position: absolute;
+  left:240rpx;
+  color:red;
+}

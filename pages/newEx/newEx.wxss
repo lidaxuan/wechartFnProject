@@ -1,0 +1,53 @@
+.newExB{
+  width: 690rpx;
+  padding:0 30rpx;
+  background: #f2f2f2;
+} 
+.newExB_o{
+  height: 170rpx;
+  line-height: 170rpx;
+  text-align: center;
+  font-size:34rpx;
+}
+.newExB_inp{
+  height: 90rpx;
+  line-height: 90rpx;
+  background: white;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #ccc;
+}
+.inp{
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.but{
+  width:100%;
+  background: #233b76;
+  color:white;
+}
+.newExB_che{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #cfcfcf;
+}
+/* .checkbox{
+  width:25rpx;
+  height:25rpx;
+} */
+checkbox .wx-checkbox-input {
+  width:25rpx;
+  height:25rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #7690d1;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+

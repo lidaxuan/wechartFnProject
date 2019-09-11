@@ -1,0 +1,25 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='Agreement'>
+    <view class='vi'>收件人 甲方：用户;</view>
+    <view class='vi' style='margin-bottom:30rpx;'>代收件人 乙方：蓝盒子家;</view>
+    <view class='vi'>甲、乙双方经友好协商，就双方合作事宜达成一致协议，甲乙双方同意共同履行本协议</view>
+    <view class='vi' style='margin-top:80rpx;'>一、合作内容</view>
+    <view class='vi'>甲方委托乙方利用自身便利场所，为甲方代收快递包裹，并按约定将所接收包裹交付乙方。</view>
+    <view class='vi' style='margin-top:80rpx;'>二、双方权利和义务</view>
+    <view class='vi'>1、甲方(收件人)委托乙方以自己的名义接收快递品;乙方接受甲方(收件人)的委托，同意替甲方(收件人)接收快递品，并转交给甲方(快递收件人)。</view>
+    <view class='vi' style='margin-top:105rpx;'>2、快件需甲方本人亲自领取，甲方(收件人)应持有效身份证件领取。领取后甲方(收件人)需书面签字，确认领取物品人领取物品、领取时间。</view>
+    <view class='vi' style='margin-top:105rpx;'>3、特殊情况需他人领取快件时，需持领取人有效身份证件和甲方(收件人)身份证件来乙方场所领取并书面签字。</view>
+    <view class='vi' style='margin-top:105rpx;'>4、甲乙双方签订本协议后，乙方代收取快件时，不需要和业主电话确认就可直接收件。</view>
+    <view class='vi' style='margin-top:55rpx;'>5、协议约定乙方替甲方收件后，乙方将代替甲方来保管快件，但不承担物品损坏的任何赔偿责任。乙方只负责快件外包装的检查和签收，但不对快递包裹内物品负责。甲方签收后，乙方将不负任何责任。</view>
+    <view class='vi' style='margin-top:155rpx;'>6、甲方需自快件签收之日起，7日内来乙方场所取走快件，快递包裹内为食品等易腐物品的，甲方需签收当日内取走快件，逾期乙方将不负任何赔偿责任。</view>
+    <view class='vi' style='margin-top:105rpx;'>7、乙方不接收任何货到付款和货到付运费快件。</view>
+    <view class='vi' style='margin-top:10rpx;'>8、在甲方委托乙方接收的包裹中夹带任何危险物品和其他易腐蚀、易污染以及禁运、限运等物品时，所造成的一切人身财产伤害，由甲方承担赔偿责任。</view>
+    <view class='vi' style='margin-top:105rpx;'>9、快递公司快递详单是本协议的有效组成部分。在签订本协议时，甲方需认真阅读核对本协议所有内容。</view>
+    <view class='vi' style='margin-top:105rpx;margin-bottom:50rpx;'>10、甲方取件的书面签收条据和本协议具有同等法律效力。</view>
+  </view>
+  <view style='background: #f2f2f2;width:750rpx;'>
+    <button  bindtap='getAgree' class='but'>同意</button>
+  </view>
+</view>
+

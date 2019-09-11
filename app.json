@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/expressD/expressD",
+    "pages/address/address",
+    "pages/Collect/Collect",
+    "pages/complete/complete",
+    "pages/Agreement/Agreement",
+    "pages/Distinguish/Distinguish",
+    "pages/newEx/newEx",
+    "pages/Sign/Sign",
+    "pages/Receive/Receive",
+    "pages/take/take",
+    "pages/service/service",
+    "pages/Map/Map",
+    "pages/type/type",
+    "pages/binding/binding",
+    "pages/Choice/Choice",
+    "pages/Deposit/Deposit",
+    "pages/results/results",
+    "pages/logs/logs",
+    "pages/noget/noget",
+    "pages/newExpress/newExpress",
+    "pages/upper/upper"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "客户",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

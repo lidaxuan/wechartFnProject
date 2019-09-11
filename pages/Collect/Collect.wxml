@@ -1,0 +1,43 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view wx:if="{{nul}}" class='conta-nul'>
+      当前店铺没有快递信息！
+  </view>
+  <view wx:for="{{expressList}}" class='CollectB' wx:key="{{index}}">
+    <view class='CollectB_o'>
+      <view class='CollectB_o_q' style='font-size:38rpx;'>{{item.username}}   {{item.phone}}</view>
+      <view class='CollectB_o_q' style='font-size:30rpx;color:#7a7a7a;'>{{item.detailedAddress}}</view>
+      <view style='position:absolute;right:0;top:40rpx;'>
+        <image class='img' src="../../img/Collect_03.png"></image>
+      </view>
+    </view>
+    <view class='CollectB_w'>
+      <view class='CollectBw' style='font-size:38rpx;'>{{item.storefront}}</view>
+      <view class='CollectBw' style='font-size:30rpx;color:#7a7a7a;'>{{item.storeAddress}}</view>
+      <view class='two' id='{{index}}' bindtap='enlarge'><image style='width: 116rpx;height: 116rpx;' src="{{item.expressPicture}}"></image></view>
+    </view>
+    <view class='CollectB_t'>
+      <text class='l'>取件码</text>
+      <text class='r fr'>{{item.expressCode}}</text>
+    </view>
+    <view class='CollectB_t'>
+      <text class='l'>存放编码</text>
+      <text class='r fr'>{{item.storageNumber}}</text>
+    </view>
+    <view class='CollectB_t'>
+      <text class='l'>存放时间</text>
+      <text class='r fr'>{{item.beginTime}}</text>
+    </view>
+    <view class='CollectB_t'>
+      <text class='l'>取件时间</text>
+      <text class='r fr'>{{item.endTime}}</text>
+    </view>
+    <view class='CollectB_t' style='position:relative;' data-index="{{index}}" bindtap='biaoji'>
+      <text class='l'>房屋标记</text>
+      <image class='Fimg' src="../../img/right.png"></image>
+      <text wx:if="{{item.start == 0}}" class='fr' style='font-size: 30rpx;color:#e51d25;margin-right:30rpx;'>暂未标记</text>
+      <text wx:else class='r fr' style='margin-right:30rpx;'>已标记</text>
+    </view>
+  </view>
+  
+</view>

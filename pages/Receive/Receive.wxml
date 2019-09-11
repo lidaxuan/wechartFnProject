@@ -1,0 +1,15 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='DepositB'>
+    <view>
+      <image class='DepositI' src="../../img/Deposit.png"></image>
+    </view>
+  </view>
+  <view class='Depositcon' style="font-size:40rpx;">
+    你已领取成功
+  </view>
+  <button class='but' bindtap='goback'>返回首页</button>
+  <view wx:for="{{adList}}" class='Advertisement' id='{{index}}' bindtap='enlarge'>
+    <image class='Adv' src="{{item.advImg}}"></image>
+  </view>
+</view>

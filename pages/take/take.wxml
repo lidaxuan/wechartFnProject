@@ -1,0 +1,19 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='bindingB'>
+    <view class='bindingB_o'>
+      <view class='bindingB_o_sel'>
+        +86
+        <image src="../../img/select.png" style='width:19rpx;height:12rpx;margin-left:50rpx;'></image>
+      </view>
+      <view>
+        <input class='bindingB_o_tel' placeholder="请输入您的手机号码" bindinput='getPhone' value=""></input>
+      </view>
+    </view>
+    <view class='bindingB_o'>
+      <input class='bindingB_o_tel' focus="{{foc}}" placeholder="请输入您的验证码" bindinput='getarae' value="{{arae}}"></input>
+      <view class='btn'><button bindtap="getCode" disabled="{{disabled}}">{{codeN}}</button></view>
+    </view>
+  </view>
+  <button class='f_btn' bindtap="getbing">立即绑定</button>
+</view>

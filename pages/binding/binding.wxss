@@ -1,0 +1,44 @@
+.bindingB{
+  width: 690rpx;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+.bindingB_o{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+  display: flex;
+  position: relative;
+}
+.bindingB_o_sel{
+  width: 170rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 10rpx;
+  border-right: 2rpx solid #f2f2f2;
+}
+.bindingB_o_tel{
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.btn{
+  position: absolute;
+  top:10rpx;
+  right:0;
+  height: 70rpx;
+}
+.btn button{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color:white;
+  background:#6683cc;
+}
+.f_btn{
+  width: 690rpx;
+  color:white;
+  background:#233b76;
+  margin-top:30rpx;
+  margin-bottom:35rpx;
+}

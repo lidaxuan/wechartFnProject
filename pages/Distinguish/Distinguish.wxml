@@ -1,0 +1,38 @@
+<view class="container">
+  <view class='dizhi' wx:if="{{loo}}">已有地址</view>
+  <view class='DistinguishB'>
+    <view wx:if="{{item.state}}" class='DistinguishB_o' wx:for="{{addressList}}" wx:key="{{index}}" data-index="{{index}}" bindtap="selectAddress">
+      <view class='DistinguishB_o_q'>
+        <text>{{item.username}}</text>
+        <text>{{item.phone}}</text>
+      </view>
+      <view class='DistinguishB_o_w'>
+        {{item.receivingCity}}{{item.receivingArea}}{{item.detailedAddress}}
+      </view>
+      <view class='DistinguishB_o_e'>
+        选择
+      </view>
+    </view>
+  </view>
+  <view class='liubai' wx:if="{{loo}}">
+    <view class='More' bindtap='getMore' wx:if="{{addressList.length > 2}}">
+      <image class='img' src="../../img/bot_03.png"></image>
+      查看更多
+    </view>
+  </view>
+  <block wx:if="{{scanUsername != '' && scanPhone != '' && scanAddress != ''}}">
+  <view class='DistinguishB'>
+    <view class='sao'>扫描识别地址</view>
+    <view class='DistinguishB_o_q'>
+      <text>{{scanUsername}}</text>
+      <text>{{scanPhone}}</text>
+    </view>
+    <view class='DistinguishB_o_wt' style='margin-bottom:20rpx;'>
+      {{scanAddress}}
+    </view>
+  </view>
+  <view class='DistinguishB' style='background:#f2f2f2;'>
+    <button class='but' bindtap='scanAddress'>使用识别地址</button>
+  </view>
+  </block>
+</view>

@@ -1,0 +1,19 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='MapB'>
+    <view class='MapB_o'>
+      <view class='resultBs' style='font-size:38rpx;'>王飞非   13785878754</view>
+      <view class='resultBs' style='font-size:30rpx;'>北京市  密云区  长安商业街A座8520</view>
+      <view>
+        <image class='img' src="../../img/right.png"></image>
+      </view>
+    </view>
+    <view class='MapB_o'>
+      <view class='resultBs' style='font-size:38rpx;'>王飞非   13785878754</view>
+      <view class='resultBs' style='font-size:30rpx;'>北京市  密云区  长安商业街A座8520</view>
+      <view>
+        <image class='img' src="../../img/right.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

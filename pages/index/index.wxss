@@ -1,0 +1,84 @@
+/**index.wxss**/
+.container{
+  background-color: #fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-top: 150rpx;
+  margin-bottom: 50rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: black;
+  margin-top: 50rpx;
+  font-size: 40rpx;
+}
+
+.userImg{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  border: 10rpx solid white;
+  overflow: hidden;
+}
+.userback{
+  position: absolute;
+  width: 100%;
+  height: 216rpx;
+  top: 0;
+  z-index: 1;
+}
+.userBI{
+  width: 100%;
+  height: 216rpx;
+}
+.userBan{
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  border-top: 1rpx solid #e5e5e5;
+}
+.userB_v{
+  flex-direction:row;
+  width: 50%;
+  height: 100%;
+  /* background: #ccc; */
+}
+.userB_f{
+  width: 690rpx;
+  height: 90rpx;
+  line-height: 85rpx;
+  padding-left: 0 30rpx;
+  position: relative;
+  font-size: 34rpx;
+}
+.img{
+  width:17rpx;
+  height:26rpx;
+  vertical-align: middle;
+  position: absolute;
+  top:30rpx;
+  right:0;
+}
+.box{
+  width: 35rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  position: absolute;
+  top: 5rpx;
+  right: 0;
+  background-color: #f12c20;
+  border-radius: 50%;
+  font-size: 30rpx;
+  color:white;
+}

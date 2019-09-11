@@ -1,0 +1,89 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='nav'>
+    客户信息
+  </view>
+  <view class='typeB'>
+    <view class='typeB_o' data-sex='1' bindtap="getsex">
+      <image wx:if="{{nan}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!nan}}" src="../../img/N_03.png" class='img'></image>
+      男
+    </view>
+    <view class='typeB_o' data-sex='2' bindtap="getsex">
+      <image wx:if="{{nv}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!nv}}" src="../../img/N_03.png" class='img'></image>
+      女
+    </view>
+    <view class='typeB_o'>
+      客户年龄
+      <view class='typeYe' bindtap="getEject">
+        <text style='margin-left:20rpx;'>{{year}}</text>
+        <image src="../../img/select.png" style='width:19rpx;height:12rpx;position: absolute;right:30rpx;top:30rpx;'></image>
+      </view>
+    </view>
+    <view class='Eject' wx:if="{{eject}}">
+      <view class='Eject_v' data-y='1' bindtap="getYear">
+        15-20岁
+      </view>
+      <view class='Eject_v' data-y='2' bindtap="getYear">
+        20-30岁
+      </view>
+      <view class='Eject_v' data-y='3' bindtap="getYear">
+        30-40岁
+      </view>
+    </view>
+  </view>
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='nav'>
+    房屋信息
+  </view>
+  <view class='typeB'>
+    <view class='typeB_o' data-house='1' bindtap="gethouse">
+      <image wx:if="{{one}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!one}}" src="../../img/N_03.png" class='img'></image>
+      自有
+    </view>
+    <view class='typeB_o' data-house='2' bindtap="gethouse">
+      <image wx:if="{{two}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!two}}" src="../../img/N_03.png" class='img'></image>
+      租住
+    </view>
+    <view class='typeB_o' data-house='3' bindtap="gethouse">
+      <image wx:if="{{there}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!there}}" src="../../img/N_03.png" class='img'></image>
+      家人租住
+    </view>
+    <view class='typeB_o' data-house='4' bindtap="gethouse">
+      <image wx:if="{{four}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!four}}" src="../../img/N_03.png" class='img'></image>
+      朋友租住
+    </view>
+  </view>
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='nav'>
+    潜在信息
+  </view>
+  <view class='typeB'>
+    <view class='typeB_o' data-potential='1' bindtap="getpotential">
+      <image wx:if="{{five}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!five}}" src="../../img/N_03.png" class='img'></image>
+      询问了租赁信息
+    </view>
+    <view class='typeB_o' data-potential='2' bindtap="getpotential">
+      <image wx:if="{{six}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!six}}" src="../../img/N_03.png" class='img'></image>
+      询问了售卖信息
+    </view>
+    <view class='typeB_o' data-potential='3' bindtap="getpotential">
+      <image wx:if="{{seven}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!seven}}" src="../../img/N_03.png" class='img'></image>
+      有出租意愿
+    </view>
+    <view class='typeB_o' data-potential='4' bindtap="getpotential">
+      <image wx:if="{{eight}}" src="../../img/y_03.png" class='img'></image>
+      <image wx:if="{{!eight}}" src="../../img/N_03.png" class='img'></image>
+      有售卖意愿
+    </view>
+  </view>
+  <button class='f_btn' bindtap="save">保存</button>
+</view>

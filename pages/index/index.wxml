@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <view class='userImg'>
+        <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+        <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+      </view>
+      <open-data type="userNickName" class="userinfo-nickname"></open-data>
+    </block>
+  </view>
+  <view class='userback'>
+    <image class='userBI' src="../../img/back01.png"></image>
+  </view>
+  <block wx:if="{{status == 2}}">
+  <view class='userBan'>
+    <view class='userB_v' style='border-right:2rpx solid #e5e5e5;' bindtap='yiqu'>
+      <view style='text-align:center;margin-top:20rpx;font-size:40rpx;'><text>{{in_express}}</text></view>
+      <view style='text-align:center;margin-top:20rpx;font-size:30rpx;color:#8f8f8f;'><text>已取快递</text></view>
+    </view>
+    <view class='userB_v' bindtap='newExpress'>
+      <view style='text-align:center;margin-top:20rpx;font-size:40rpx;'><text>{{out_express}}</text></view>
+      <view style='text-align:center;margin-top:20rpx;font-size:30rpx;color:#8f8f8f;'><text>未取快递</text></view>
+    </view>
+  </view>
+  <view style='width:100%;height:35rpx;background:#f2f2f2;'>
+  </view>
+  <view class='userB_f' bindtap='new' wx:if="{{out_express != 0}}" style='border-bottom: 2rpx solid #e5e5e5;'>
+    取快递
+    <image src="../../img/right.png" class='img'></image>
+    <view class='box' >{{out_express}}</view>
+  </view>
+  <view class='userB_f' bindtap='getsh'>
+    上门快递
+    <image src="../../img/right.png" class='img'></image>
+  </view>
+  <view style='width:100%;height:35rpx;background:#f2f2f2;'>
+  </view>
+  <!--<view class='userB_f' bindtap='getsh' style='border-bottom: 2rpx solid #e5e5e5;'>
+    <image src="../../img/shang.jpg" style='width:30rpx;height:35rpx;vertical-align: middle;'></image>
+    上门快递
+    <image src="../../img/right.png" class='img'></image>
+  </view>-->  
+  <view class='userB_f' bindtap='understand'>
+    <image src="../../img/logo_03.png" style='width:30rpx;height:35rpx;vertical-align: middle;'></image>
+    了解蓝盒子家快件寄存服务
+    <image src="../../img/right.png" class='img'></image>
+  </view>
+  </block>
+  <!--店员-->
+  <block wx:else>
+  <view class='userBan'>
+    <view class='userB_v' style='border-right:2rpx solid #e5e5e5;' bindtap='wqu'>
+      <view style='text-align:center;margin-top:20rpx;font-size:40rpx;'><text>{{intotal}}</text></view>
+      <view style='text-align:center;margin-top:20rpx;font-size:30rpx;color:#8f8f8f;'><text>未领取快递</text></view>
+    </view>
+    <view class='userB_v' bindtap='lqu'>
+      <view style='text-align:center;margin-top:20rpx;font-size:40rpx;'><text>{{outtotal}}</text></view>
+      <view style='text-align:center;margin-top:20rpx;font-size:30rpx;color:#8f8f8f;'><text>未标记快递</text></view>
+    </view>
+  </view>
+  <view style='width:100%;height:35rpx;background:#f2f2f2;'>
+  </view>
+  <view class='userB_f' style='border-bottom: 2rpx solid #ccc;' bindtap='cunfang'>
+    快递存放
+    <image src="../../img/right.png" class='img'></image>
+  </view>
+  <view class='userB_f' bindtap='lingqu'>
+    已取快递
+    <image src="../../img/right.png" class='img'></image>
+    <view class='box' wx:if="{{outtotal != 0}}">{{outtotal}}</view>
+  </view> 
+  </block> 
+</view>
+

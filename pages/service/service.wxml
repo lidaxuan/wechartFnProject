@@ -1,0 +1,54 @@
+<view class="container">
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='serviceB'>
+    <view class='serviceB_int'>
+      蓝盒子家简介
+    </view>
+    <view style='font-size:26rpx;color:#909090;margin-bottom:20rpx;'>
+    {{introduction}}
+    </view>
+  </view>
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='serviceB'>
+    <view class='serviceB_int'>
+      服务宗旨
+    </view>
+    <view style='font-size:26rpx;color:#909090;margin-bottom:20rpx;'>
+    {{purpose}}
+    </view>
+  </view>
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='serviceB'>
+    <view class='serviceB_t'>
+      <view>
+        <text class='l'>收费标准</text>
+        <text class='r' style='float:right;'>{{charge}}</text>
+      </view>
+    </view>
+    <view class='serviceB_t'>
+      <view>
+        <text class='l'>服务时间</text>
+        <text class='r' style='float:right;'>{{time}}</text>
+      </view>
+    </view>
+    <view class='serviceB_t'>
+      <view>
+        <text class='l'>服务门店</text>
+        <text class='r' style='float:right;'>{{store}}</text>
+      </view>
+    </view>
+  </view>
+  <view style='width:100%;height:30rpx;background:#f2f2f2;'></view>
+  <view class='serviceB'>
+    <view class='serviceB_int' style='border-bottom: 2rpx solid #ccc;'>
+      服务店铺地址
+    </view>
+    <view class='service_f' wx:for="{{shopArr}}" wx:key="shopArr.storeId">
+      <view class='service_f_o l'>{{item.storeName}}</view>
+      <view class='service_f_o r'>
+        <text class='serice_text'>{{item.storeDetail}}</text>
+        <text style='float:right;display: inline-block;'>{{item.phone}}</text>
+      </view>
+    </view>
+  </view>
+</view>

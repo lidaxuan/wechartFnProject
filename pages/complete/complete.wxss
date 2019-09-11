@@ -1,0 +1,56 @@
+.resultB_o{
+  width: 690rpx;
+  height: 150rpx;
+  border-bottom: 2rpx solid #ccc;
+  /* padding-right: 60rpx; */
+  position: relative;
+}
+.resultBs{
+  width: 690rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+}
+.resultB_w{
+  width: 690rpx;
+  height: 150rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: relative;
+}
+.resultBw{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: right;
+  /* margin-right:120rpx; */
+}
+.resultB_t{
+  width: 690rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #ccc;
+  font-size:30rpx;
+}
+
+.one{
+  position: absolute;
+  top:40rpx;  
+  right:0;
+}
+.two{
+  position: absolute;
+  top:17rpx;
+}
+.one image{
+  width: 89rpx;
+  height: 66rpx;
+}
+.two image{
+  width: 116rpx;
+  height: 116rpx;
+}
+.conta-nul{
+  width:100%;
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+}

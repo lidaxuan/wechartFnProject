@@ -1,0 +1,69 @@
+.resultB_o{
+  width: 690rpx;
+  height: 150rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: relative;
+}
+.resultBs{
+  width: 690rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+}
+.resultB_w{
+  width: 690rpx;
+  height: 150rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: relative;
+}
+.resultBw{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: right;
+  margin-right:120rpx;
+}
+.resultB_t{
+  width: 690rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #ccc;
+  font-size:30rpx;
+}
+.resultB_t:last-child{
+  border:none;
+}
+.result_foot{
+  width: 750rpx;
+  height: 115rpx;
+  background: #f2f2f2;
+}
+.but{
+  width:690rpx;
+  margin: 0 30rpx;
+  background: #233b76;
+  color:white;
+}
+.one{
+  position: absolute;
+  top:30rpx;  
+  right: 0;
+}
+.two{
+  position: absolute;
+  top:17rpx;
+}
+.one image{
+  width: 89rpx;
+  height: 66rpx;
+}
+.two image{
+  width: 116rpx;
+  height: 116rpx;
+}
+.conta-nul{
+  width:100%;
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
